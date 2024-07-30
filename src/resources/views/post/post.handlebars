@@ -1,0 +1,24 @@
+<div class="container mt-3">
+    <a href="/posts/create" style="margin-right: 2px;"><button class="btn btn-primary  px-2"
+            type="button">Create</button></a>
+    <div class="row g-2" style="margin-top: 10px;">
+        {{#each posts}}
+        <div class="col-md-3" style="width: 25.4%">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <img class="img" src="{{image}}" alt="" style="height: 120px;">
+                    <h5 class="card-title">{{title}}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">{{author}}</h6>
+                    <p class="card-text">{{content}}</p>
+                    <a href="/posts/{{_id}}" class="card-link">{{_id}}</a>
+                    <br>
+                    <a href="/posts/delete/{{_id}}" style="margin-right: 5px;"><button class="btn btn-danger  px-2"
+                            type="button">Delete</button></a>
+                    <a href="/posts/update/{{_id}}" style="margin-right: 2px;"><button class="btn btn-warning  px-2"
+                            type="button">Update</button></a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

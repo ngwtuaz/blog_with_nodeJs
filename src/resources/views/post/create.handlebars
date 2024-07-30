@@ -1,0 +1,21 @@
+
+<div class="container mt-3">
+    <form action="/posts/store" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title">
+        </div>
+        <div class="mb-3">
+        <label for="content" class="form-label">Content</label>
+        <input type="text" class="form-control" id="content" name="content">
+        </div>
+        <div class="mb-3">
+        <label for="author" class="form-label">Author</label>
+        <input type="text" class="form-control" id="author" name="author">
+        </div>
+        <label for="image" class="form-label">Image</label>
+        <input type="file" class="form-control" id="image" name="avatar">
+        </div>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+</div>
